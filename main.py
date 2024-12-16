@@ -14,14 +14,24 @@ console = Console()
 def add_path(path, to, description=""):
     """Aggiungi un nuovo path"""
     operation.add_path(path, to, description)    
-
+    
+@click.command()
+@click.option("--path", "-p", help="Path del file da rimuovere", default="index")
+@click.option("--index", "-i", help="Id del file fa rimuovere", default=None)    
+def remove_path(path, index=None):
+    """Rimuovi un path"""
+    if path == "index":
+        operation.remove_path_id(index)
+    else:
+        operation.remove_path(path)
+    
 @click.command()
 def table():
     """tabella con tutti i path dei file che verranno spostati"""
     table = Table(title="List of paths")
     table.add_column("ID", justify="right", style="cyan", no_wrap=True)
     table.add_column("Path", style="magenta")
-    table.add_column("To", justify="right", style="green")
+    table.add_column("To", justify="left", style="green")
     table.add_column("Description", justify="right", style="green")
 
     i = 0
@@ -47,6 +57,7 @@ def cli():
 cli.add_command(table)
 cli.add_command(move_files)
 cli.add_command(add_path)
+cli.add_command(remove_path)
 
 
 if __name__ == "__main__":
