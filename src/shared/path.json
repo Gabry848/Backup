@@ -1,12 +1,7 @@
 [
-  {
-    "path": "C:\\Users\\User\\Desktop\\Progetti\\python\\Backup\\myfile.txt",
-    "to": "C:\\Users\\User\\Desktop",
-    "description": "description"
-  },
-  {
-    "path": "C:\\Users\\User\\Desktop\\Progetti\\python\\Backup\\seconffile.md",
-    "to": "C:\\Users\\User\\Desktop\\Progetti",
-    "description": null
-  }
+    {
+        "path": "C:\\Users\\User\\Downloads\\1",
+        "to": "C:\\Users\\User\\Downloads\\22",
+        "description": "Example 2"
+    }
 ]

@@ -2,9 +2,11 @@ import click
 from rich.console import Console
 from rich.table import Table
 
+import logging
+
 import operation
 
-# Crea un'istanza di Console di Rich per stampare in modo bello
+# Crea un'istanza di Console di Rich
 console = Console()
 
 @click.command()
@@ -47,18 +49,21 @@ def move_files():
     """copy the file to the new path """
     operation.copy_files(operation.read_file())
 
-
+def clear():
+    operation.clear()
+    
+    
 @click.group()
 def cli():
     """Programma CLI con Click e Rich"""
     pass
 
 # Aggiungi i comandi al gruppo CLI
-cli.add_command(table)
-cli.add_command(move_files)
-cli.add_command(add_path)
-cli.add_command(remove_path)
-
+cli.add_command(table, name="list")
+cli.add_command(move_files, name="start")
+cli.add_command(add_path, name="add")
+cli.add_command(remove_path, name="remove")
+cli.add_command(clear, name="clear")
 
 if __name__ == "__main__":
     cli()
