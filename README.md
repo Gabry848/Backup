@@ -8,7 +8,7 @@ The Backup project is an innovative solution designed to simplify and automate t
 
 ## Key Features
 
-- **Automatic Backup**: Schedule automatic backups to ensure that your data is always up-to-date.
+<!--- **Automatic Backup**: Schedule automatic backups to ensure that your data is always up-to-date.-->
 - **Easy Recovery**: Recover your data with a few simple clicks.
 - **User-Friendly Interface**: Easily navigate through the features with a clear and intuitive interface.
 - Multi-Platform Compatibility\*\*: Works on Windows, macOS and Linux.
