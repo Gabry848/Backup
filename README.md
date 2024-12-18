@@ -32,6 +32,31 @@ Once installed, you can start the programme by running the following command:
 python main.py
 ```
 
+## Utilizzo
+
+Il progetto Backup offre una serie di comandi CLI per gestire i percorsi dei file da copiare e spostare. Ecco un elenco dei comandi disponibili:
+
+- **add**: Add a new file path to be copied.
+  ```bash
+  python main.py add --path <percorso-file> --to <percorso-destinazione> --description <descrizione-opzionale>
+  ```
+
+- **remove**: Remove a file path.
+  ```bash python main.py remove --path <percorso-file>```
+  you can olso remove path with his id
+  ```bash python main.py remove --index <id>```
+
+- **list**: Show a table of all the paths of files that will be moved.
+  ```bash python main.py list```
+
+- **start**: Move the files to the new paths specified.
+  ```bash python main.py start```
+
+- **clear**: Clear all the paths stored.
+  ```bash python main.py clear```
+
+You can also use the `--help` option to get more information about each command.
+
 ## Contribute
 
 We are always looking for contributors! If you wish to contribute, please follow these steps:
