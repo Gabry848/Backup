@@ -28,7 +28,7 @@ To get started with the Backup project, follow these simple steps:
 
 Once installed, you can start the programme by running the following command:
 
-```bash python main.pu```
+```bash python main.py```
 
 The Backup project offers a number of CLI commands to manage the file paths to be copied and moved. Here is a list of the commands available:
 
