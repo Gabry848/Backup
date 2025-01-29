@@ -4,7 +4,7 @@ Welcome to the **Backup** project! 🚀
 
 ## Project Description
 
-The Backup project is an innovative solution designed to simplify and automate the data backup process. With an intuitive interface and advanced functionality, this project aims to ensure that your data is always safe and easily retrievable.
+A simple project for copy files and folders to other pat
 
 ## Key Features
 
